@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+
+    input{
+        
+        padding-top:10px; 
+        padding-bottom: 10px;
+        padding-right:60px; 
+        padding-left:50px; 
+        border:1px solid #327981;
+        border-radius: 7px;
+        color:#327981; 
+        outline:#327981; 
+        box-shadow: 4px 4px 4px 0px black;
+         
+    }
+
+    input:hover{
+       border:2px solid #f45555; 
+    }
+
+    .btn:hover{
+        transform: translateY(-10%);
+
+    }
+    .btn{
+        box-shadow: 4px 4px 4px 0px black;
+        
+    }
+
+    a{
+        text-decoration: none;
+        color:white; 
+
+    }
+
+    body{
+        height: 100%;
+        overflow: hidden;
+        background:linear-gradient(150deg,#327981 50%,#5fcad6 50%); 
+       
+    }
+
+    .container{
+        height: 100vh;
+    }
+
+    h1{
+        color:#f45555; 
+        position: relative;
+        
+       
+    }
+
+  /* .container  h1::before{
+        content:" "; 
+        position: absolute;
+      background-color: rgb(160, 160, 160) ;
+         top:-760px; 
+        border:1px solid; 
+        border-bottom:1300px solid ; 
+        border-top:1300px solid ; 
+        border-right:800px solid; 
+        transform: rotate(-300deg);
+        z-index: -99;
+
+        
+    } */
+
+    .trl{
+        animation: fromleft 2s ease  ;
+    }
+
+    .trr{
+        animation: fromright 2s ease ;
+    }
+
+    .fadeout{
+        opacity: 0;
+        animation: fadeout 2s forwards; 
+    }
+
+    @keyframes fromleft {
+
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+        
+    }
+
+    @keyframes fromright {
+        from{
+            transform:translateX(120%); 
+        }
+        to{
+            transform: translateX(0%);
+        }
+        
+    }
+
+    @keyframes fadeout {
+        from{
+            opacity: 0;
+        }
+
+        to{
+            opacity: 1;
+            z-index: -99; 
+        }
+        
+    }
+
+
+
+ 
+ 
+
+
+</style>
+<body>
+    <div class="container align-items-center justify-content-center d-flex w-auto ">
+
+    <div class="content d-flex flex-column align-items-center justify-content-center  text-white w-100 text-center ">
+        
+   <h1 class="mb-3 fadeout">ICONIC</h1>
+    <h5 class="m-3 trl">SIGN IN OR CREATE AN ACCOUNT</h5>
+
+     <h6 class="m-2 trl">Unlock a world rewards with one account across Iconic,hotels.com and video</h6>
+
+     <button class="btn btn-lg bg-primary px-5 m-2 text-light trl">Sign in with Google</button>
+     <p class="m-3">or</p>
+     <input type="email" placeholder="Enter Your Email" class="trr" required>
+     <button class="btn btn-primary m-3 trr">Continue</button>
+     <a href="" class="m-3 trr" >Other ways to sign in</a>
+     <div class="trr" >
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-brands fa-facebook"></i>
+     </div>
+
+     <p class="trr w-75" >By continuing, you have read and agree to our Terms
+        and Conditions, Privacy Statement, and One Key Rewards Terms & 
+       Conditions.</p>
+    </div>
+
+  
+</div>
+   
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+
+*{
+
+  
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    letter-spacing:1.5px;
+    font-weight:700 ;
+}
+
+body{
+  background-color:#327981; 
+}
+
+
+
+:root{
+  --theme-color:#F45555; 
+  --theme-color2:#327981; 
+}
+
+nav .btn{
+
+   border:2px solid var(--theme-color); 
+   background-color: var(--theme-color);
+   color:white; 
+   border-radius: 15px;
+   z-index: 1;
+   position: relative;
+   -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+   box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+   transition: all 250ms;
+   overflow: hidden;
+
+}
+
+nav .btn::before{
+  content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color:white;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+nav .btn:hover {
+  color:var(--theme-color2); 
+ }
+ 
+ nav .btn:hover::before {
+  width: 100%;
+ }
+
+ /* btn end  */
+
+ .navbar-brand{
+  color:var(--theme-color);
+ }
+
+ .navbar-brand:hover{
+  color:#327981; 
+ }
+.nav-link{
+ position: relative;
+  
+}
+
+
+.nav-link::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background-color:#F45555;
+  position: absolute;
+  bottom: -.25rem;
+  left: 50%;
+  transition: width .4s, left .4s;
+}
+
+.nav-link:hover::before {
+  
+  width: 100%;
+  left: 0;
+}
+
+.nav-link:hover{
+  color:#F45555; 
+}
+
+
+
+/* navbar end  */
+
+
+
+.custom{
+  height: 100vh;
+}
+
+.custom img{
+  height: 100vh;
+  z-index:-999; 
+  position: absolute;
+  top:0; 
+  left:0; 
+  width:100%; 
+  opacity: 50%;
+}
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+
+.custom{
+  color:#327981; 
+}
+.custom1 {
+  cursor: pointer;
+  position: relative;
+  
+  font-size: 18px;
+  color: #327981; 
+  border: 1px solid #327981; 
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.custom1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #327981; 
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.custom1:hover::before {
+  scale: 3;
+}
+
+.custom1:hover {
+  color: #f9f9f9;
+  scale:1; 
+  box-shadow: 0 0px 20px #f8f9fa
+}
+
+.custom2{
+  color:#F45555; 
+}
+.custom2 {
+  cursor: pointer;
+  position: relative;
+  
+  font-size: 18px;
+  color:#F45555; 
+  border: 2px solid #F45555; 
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.custom2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #F45555; 
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.custom2:hover::before {
+  scale: 3;
+}
+
+.custom2:hover {
+  color: #F45555;
+  scale:1; 
+  box-shadow: 0 0px 20px #F45555; 
+}
+
+#home3{
+  height: 100vh;
+}
+
+
+.custom-image-2{
+  opacity: 50%;
+  width: 80%;
+  height: 180vh;
+  position: absolute;
+  z-index: -999;
+  top:150px; 
+ 
+}
+
+#home4{
+  position: relative; 
+}
+
+/* #home4 h5::before{
+  content:""; 
+  position: absolute;
+  transform: rotate(-45deg);
+  top:150px;  
+  right:190px; 
+  border-left:1218px solid transparent; 
+  border-right: 0 solid transparent;
+  border-bottom:1250px solid rgb(0, 0, 0); 
+  opacity: 80%;
+  height: 100vh;
+  z-index:-1;  
+  transform: rotate(360deg);
+} */
+
+
+
+#home6
+{
+  background-image: url('imgs/bg-1\ blur.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+#home4 .custom-4-bg{
+
+  background-image: url('imgs/bg-4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -999;
+
+  
+}
+
+#home4 img{
+  width: 456px;
+  height: 230px;
+
+}
+
+
+  
+
+
+@media (max-width:768px) {
+
+  .Mandarin,.Solitaire{
+    display: flex;
+    flex-direction: column;
+   background-color: white;
+    color:#000000; 
+    text-align: left;
+    order: 1;
+    
+  }
+  
+  .mandarin-img,.davis-img,.soli-img,.nana-img{
+   
+  
+    border-radius: 0%;
+    width: 100%;
+    background-color: red;
+    order: 1;
+     
+  }
+
+  .Davis,.Nana{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color:black; 
+    
+  }
+
+  .davis-body{
+    text-align: left;
+  }
+
+  .nana-body{
+    text-align: left;
+    order:2; 
+  }
+
+  div.davis-body{order:2}; 
+  div.davis-img{order:1}; 
+
+  div.nana-img{order:1}; 
+
+
+
+
+  
+}
+
+.card:hover{
+    
+  border:2px solid #F45555; 
+}
+
+
+.fadeout{
+ 
+  animation: fadeout 2s ease ; 
+}
+
+@keyframes fadeout {
+from{
+  opacity: 0;
+}
+  to{
+    opacity: 1;
+  }
+  
+}
+
+.fs{
+  font-size: 60px;
+}
+
+
+
+
+
+
+
+ 
+
+
